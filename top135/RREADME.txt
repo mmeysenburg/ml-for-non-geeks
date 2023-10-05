@@ -1,0 +1,1 @@
+This processing app is used to produce JPGs from one image in the Fashion MNIST training data.
