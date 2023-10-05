@@ -1,4 +1,5 @@
-size(280, 280);
+//size(280, 280);
+size(28,28);
 
 String[] fileLines = loadStrings("top135.txt");
 int[][] pixels = new int[28][28];
@@ -10,12 +11,14 @@ for(int r = 0; r < 28; r++) {
   }
 }
 
-stroke(color(128,0,0));
+//stroke(color(128,0,0));
 //noStroke();
 for(int r = 0; r < 28; r++) {
   for(int c = 0; c < 28; c++) {
-    fill(color(pixels[r][c]));
-    rect(c * 10.0f, r * 10.0f, 10.0f, 10.0f);
+    //fill(color(pixels[r][c]));
+    stroke(color(pixels[r][c]));
+    //rect(c * 10.0f, r * 10.0f, 10.0f, 10.0f);
+    point(c, r);
   }
 }
 
